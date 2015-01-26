@@ -1,0 +1,28 @@
+{
+  "name": "proto-extend",
+  "version": "0.1.0",
+  "description": "Extend objects in JavaScript using the prototype chain",
+  "main": "lib/proto-extend.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpatti/proto-extend.git"
+  },
+  "keywords": [
+    "object",
+    "extend",
+    "prototype"
+  ],
+  "author": "Doug Patti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dpatti/proto-extend/issues"
+  },
+  "homepage": "https://github.com/dpatti/proto-extend",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
