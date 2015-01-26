@@ -49,3 +49,12 @@ A helper function used internally but exposed for convenience. It uses the
 native methods on Object for getting a list of property names and property
 descriptors and creates a map. The main purpose is to feed the second argument
 of [`Object.create()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create).
+
+### `extend.flatten(object[, base]) -> Object`
+
+A helper function that takes a prototype chain and flattens it into a new single
+object. This is useful if you are passing a prototypal-extended object to a
+library that intentionally iterates over only "own" keys. If you specify a
+`base`, it will stop flattening when it reaches a prototype of that object. By
+default, this is `Object.prototype`, though it will always stop if it reaches
+the `null` prototype.
