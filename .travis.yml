@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "0.8"
+  - "0.10"
+  - "0.12"
+  - "iojs"
+install:
+  - npm update -g npm
+  - npm install
+script: npm test
