@@ -3,6 +3,28 @@
 A tiny library that provides a function to create a prototype chain from
 multiple objects.
 
+Stop writing this:
+
+```javascript
+var Child = Object.create(Parent, {
+  foo: {
+    "value": 10
+  },
+  bar: {
+    "value": function() { /* ... */ }
+  }
+});
+```
+
+And start writing this:
+
+```javascript
+var Child = extend(Parent, {
+  foo: 10,
+  bar: function() { /* ... */ }
+});
+```
+
 ## Usage
 
 ```javascript
@@ -17,7 +39,7 @@ var chain = extend(a, b, c);
 The above returns a new object with a prototype chain of the following:
 
 ```
-Object.prototype -> a -> b -> c
+c -> b -> a -> Object.prototype
 ```
 
 and has the properties:
