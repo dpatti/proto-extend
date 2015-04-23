@@ -1,6 +1,6 @@
 {
   "name": "proto-extend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Extend objects in JavaScript using the prototype chain",
   "main": "lib/proto-extend.js",
   "scripts": {
